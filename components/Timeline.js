@@ -91,7 +91,7 @@ export default function Timeline(props) {
              
          <Grid.Column verticalAlign='middle' textAlign="center">
              <Link href="/Bhargav Mangaduddi.pdf" target="_blank">
-                 <Button animated color='blue' as="a">
+                 <Button animated color='blue'>
                      <Button.Content visible>
                    <Icon name='linkify' />
                    Full Resume

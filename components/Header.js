@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import ContactMe from './contactForm';
 import { Grid, Image, Popup, Button, Form, Modal, Label, Icon } from "semantic-ui-react"
 
 export default function Header(props) {
@@ -59,43 +60,7 @@ export default function Header(props) {
     <Icon name='mail' />Contact Me
   </Label>
       {/* <Button basic onClick={() => setIsModalOpen(!isModalOpen)}><span style={{fontWeight: 'bolder', color: isNightMode ? 'white':'black'}}>Contact Me</span></Button> */}
-      <Modal
-        dimmer= 'blurring'
-        size="tiny"
-        open={isModalOpen}
-        // onClose={() => dispatch({ type: 'close' })}
-      >
-        <Modal.Header textAlign="center"><Icon name='mail' />Contact Me</Modal.Header>
-        <Modal.Content>
-        <Form>
-    <Form.Field>
-      <label>First Name</label>
-      <input placeholder='First Name' />
-    </Form.Field>
-    <Form.Field>
-      <label>Last Name</label>
-      <input placeholder='Last Name' />
-    </Form.Field>
-    <Form.Field>
-      <label>Email</label>
-      <input placeholder='Last Name' />
-    </Form.Field>
-    <Form.Field>
-      <label>Phone</label>
-      <input placeholder='Last Name' />
-    </Form.Field>
-    <Grid>
-      <Grid.Row>
-        <Grid.Column textAlign='center' verticalAlign='middle'>
-
-        <Button onClick={() => setIsModalOpen(false)}>Cancel</Button>
-    <Button type='submit'>Submit</Button>
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
-    </Form>
-    </Modal.Content>
-      </Modal>
+      <ContactMe isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
     </div>
     </div>
                 </Grid.Column>

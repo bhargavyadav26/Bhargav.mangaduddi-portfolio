@@ -21,7 +21,7 @@ export default function Footer(props) {
                 <Grid.Row columns={2}>
                     <Grid.Column textAlign="center" verticalAlign="middle">
                         <span style={{fontSize:"medium", fontWeight: "bold", color: textColor  }} aria-label="copyright bhargav mangaduddi">
-                        &copy; 2023 Bhargav Mangaduddi
+                        &copy; 2023 Bhargav Mangaduddi. All Rights Reserved.
                         </span>
                     </Grid.Column>
                     <Grid.Column>
