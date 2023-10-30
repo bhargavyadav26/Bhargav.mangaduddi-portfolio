@@ -94,13 +94,14 @@ export default function Timeline(props) {
                  <Button animated color='blue'>
                      <Button.Content visible>
                    <Icon name='linkify' />
-                   Full Resume
+                   Full Résumé
                    </Button.Content>
                    <Button.Content hidden>
-                       Click here
+                       View
                    </Button.Content>
                  </Button>
                  </Link>
+                 <Button as="a" href="/Bhargav Mangaduddi.pdf" download="Bhargav Mangaduddi Resume" floated icon="download" color="green"/>
                         </Grid.Column>
          </Grid.Row>
      </Grid>

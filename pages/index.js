@@ -9,12 +9,15 @@ import ParticlesComp from '../components/Particles';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Timeline from '../components/Timeline';
+
+
 export default function HomePage() {
-  const [bgColor, setBgColor] = useState('white');
+  const [bgColor, setBgColor] = useState('#f9f9f9');
   const [isBgColorWhite, setIsBgColorWhite] = useState(true);
   
   const [textColor, setTextColor] = useState('black');
   const [particlesColor, setParticlesColor] = useState('#000000');
+  const [isModalOpen, setIsModalOpen] = useState(false);
   // useEffect(() => {
   //   changeBackgroundColor('rgb(5, 5, 5)')
   // });
@@ -22,7 +25,7 @@ export default function HomePage() {
 const changeBackgroundColor = (color) => {
   console.log('col', color)
   setBgColor(color)
-  if(color === 'white') {
+  if(color === '#f9f9f9') {
     setIsBgColorWhite(true);
     setParticlesColor('#000000')
     setTextColor('black');
@@ -41,7 +44,7 @@ const changeBackgroundColor = (color) => {
       <div style={{backgroundColor: bgColor, transition: 'all 1s linear'}}>
         
       <header>
-        <Header changeBackgroundColor={changeBackgroundColor} />
+        <Header changeBackgroundColor={changeBackgroundColor} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
         </header>
         <main className="container">
           <ParticlesComp textColor={textColor} particlesColor={particlesColor}/>
@@ -52,7 +55,7 @@ const changeBackgroundColor = (color) => {
         <Timeline isBgColorWhite={isBgColorWhite}/>
         &nbsp;
         <footer>
-            <Footer isBgColorWhite={isBgColorWhite}/>
+            <Footer isBgColorWhite={isBgColorWhite}  isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
             </footer>
       </div>
     </div>

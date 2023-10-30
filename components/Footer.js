@@ -1,6 +1,7 @@
 import { Grid, Image } from "semantic-ui-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from "react";
+import ContactMe from "./contactForm";
 
 export default function Footer(props) {
 
@@ -18,11 +19,15 @@ export default function Footer(props) {
     return (
         <div style={{marginTop: '15px'}}>
             <Grid>
-                <Grid.Row columns={2}>
+                <Grid.Row columns={3}>
                     <Grid.Column textAlign="center" verticalAlign="middle">
                         <span style={{fontSize:"medium", fontWeight: "bold", color: textColor  }} aria-label="copyright bhargav mangaduddi">
                         &copy; 2023 Bhargav Mangaduddi. All Rights Reserved.
                         </span>
+                    </Grid.Column>
+                    <Grid.Column textAlign="center" verticalAlign="middle">
+                    <ContactMe isModalOpen={props.isModalOpen} setIsModalOpen={props.setIsModalOpen} />
+
                     </Grid.Column>
                     <Grid.Column>
                         <Grid  textAlign="center" verticalAlign="middle">

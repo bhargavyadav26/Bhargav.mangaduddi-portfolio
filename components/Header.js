@@ -4,12 +4,11 @@ import { Grid, Image, Popup, Button, Form, Modal, Label, Icon } from "semantic-u
 
 export default function Header(props) {
     const [isNightMode, setIsNightMode] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false);
   const toggle = () => {
     console.log('isNightMode',isNightMode);
     setIsNightMode(!isNightMode);
     if(isNightMode) {
-        props.changeBackgroundColor('white');
+        props.changeBackgroundColor('#f9f9f9');
     } else {
         props.changeBackgroundColor('black')
     }
@@ -55,13 +54,8 @@ export default function Header(props) {
     </div>
     &nbsp;&nbsp;
       &nbsp;&nbsp;
-    <div>
-    <Label as='a' size='large' basic color='blue' onClick={() => setIsModalOpen(!isModalOpen)}>
-    <Icon name='mail' />Contact Me
-  </Label>
       {/* <Button basic onClick={() => setIsModalOpen(!isModalOpen)}><span style={{fontWeight: 'bolder', color: isNightMode ? 'white':'black'}}>Contact Me</span></Button> */}
-      <ContactMe isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
-    </div>
+      <ContactMe isModalOpen={props.isModalOpen} setIsModalOpen={props.setIsModalOpen} />
     </div>
                 </Grid.Column>
             </Grid.Row>

@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import {Form, Modal, Icon, Button, Grid, Loader, Dimmer, Message} from 'semantic-ui-react';
+import {Form, Modal, Icon, Button, Grid, Loader, Dimmer, Message, Label} from 'semantic-ui-react';
 import {serviceId, templateId, userPublicKey} from '../config/Config'
 import { useState, useRef } from 'react';
 
@@ -42,6 +42,10 @@ export default function ContactMe(props) {
     };
 
     return (
+        <div>
+        <Label as='a' size='large' basic color='blue' onClick={() => props.setIsModalOpen(!props.isModalOpen)}>
+        <Icon name='mail' />Contact Me
+      </Label>
         <Modal
         dimmer= 'blurring'
         closeIcon
@@ -115,5 +119,6 @@ export default function ContactMe(props) {
             }
     </Modal.Content>
       </Modal>
+      </div>
     )
 }
