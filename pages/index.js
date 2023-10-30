@@ -23,7 +23,6 @@ export default function HomePage() {
   // });
 
 const changeBackgroundColor = (color) => {
-  console.log('col', color)
   setBgColor(color)
   if(color === '#f9f9f9') {
     setIsBgColorWhite(true);

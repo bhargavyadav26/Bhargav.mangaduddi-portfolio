@@ -15,7 +15,6 @@ export default function Footer(props) {
         }
     })
 
-    console.log('isBgColorWhite',props.isBgColorWhite, textColor);
     return (
         <div style={{marginTop: '15px'}}>
             <Grid>

@@ -5,7 +5,6 @@ import { Grid, Image, Popup, Button, Form, Modal, Label, Icon } from "semantic-u
 export default function Header(props) {
     const [isNightMode, setIsNightMode] = useState(false);
   const toggle = () => {
-    console.log('isNightMode',isNightMode);
     setIsNightMode(!isNightMode);
     if(isNightMode) {
         props.changeBackgroundColor('#f9f9f9');

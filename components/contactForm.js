@@ -16,7 +16,6 @@ export default function ContactMe(props) {
 
     const sendEmail = (e) => {
       //  const form = JSON.stringify({ name, email, phone, message }, null, 2)
-        console.log('form', form)
         e.preventDefault();
         setIsLoading(true)
         emailjs.sendForm(serviceId, templateId, form.current, userPublicKey)

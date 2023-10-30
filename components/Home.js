@@ -31,7 +31,6 @@ export default function Home(props) {
           typeSpeed: 70,
           backSpeed: 80,
         };
-        console.log('typed',typed)
         // elRef refers to the <span> rendered below
         typed.current = new Typed(el.current, options);
     
