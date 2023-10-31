@@ -10,6 +10,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Timeline from '../components/Timeline';
 import AboutMe from '../components/AboutMe';
+import MySkills from '../components/MySkills';
+import { Divider } from 'semantic-ui-react';
 
 export default function HomePage() {
   const [bgColor, setBgColor] = useState('#f9f9f9');
@@ -47,11 +49,16 @@ const changeBackgroundColor = (color) => {
         </header>
         <main className="container">
           <ParticlesComp textColor={textColor} particlesColor={particlesColor}/>
-          
           <Home isBgColorWhite={isBgColorWhite}/>
         </main>
+        <Divider hidden/>
         <AboutMe textColor={textColor} isBgColorWhite={isBgColorWhite} />
+        <Divider hidden />
         <Timeline textColor={textColor} isBgColorWhite={isBgColorWhite}/>
+        <Divider hidden />
+        &nbsp;
+        &nbsp;
+        <MySkills textColor={textColor} isBgColorWhite={isBgColorWhite}/>
         &nbsp;
         <footer>
             <Footer isBgColorWhite={isBgColorWhite}  isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>

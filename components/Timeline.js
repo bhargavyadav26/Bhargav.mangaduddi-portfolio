@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 export default function Timeline(props) {
  return (
-     <Grid>
+     <Grid className='padding-section'>
       <Grid.Row>
         <Grid.Column textAlign='center'>
-        <p style={{fontSize: "xx-large", fontWeight: 'bolder', fontFamily: 'cursive', color: props.textColor}}>My Timeline</p>
+        <p className='section-header' style={{color: props.textColor}}>My Timeline</p>
         </Grid.Column>
       </Grid.Row>
       <Divider inverted={!props.isBgColorWhite} />

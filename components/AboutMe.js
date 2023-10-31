@@ -3,13 +3,13 @@ import { Grid, Image, Header, Divider } from "semantic-ui-react";
 
 export default function AboutMe(props) {
     return (
-        <Grid centered padded stackable style={{padding: '20px'}}>
+        <Grid centered padded stackable className="padding-section" style={{backgroundColor: props.isBgColorWhite ? '#F0F0F0' : '#3F3F41'}} >
         <Grid.Row centered columns={2}>
             <Grid.Column verticalAlign="middle" textAlign="center" mobile={16} tablet={8} computer={4}>
                 <Image src="profile.jpg" size="medium" centered circular  />
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={12} textAlign="center" verticalAlign="middle">
-                <p style={{fontSize: "xx-large", fontWeight: 'bolder', fontFamily: 'cursive', color: props.textColor}}>Who am I?</p>
+                <p className="section-header" style={{color: props.textColor}}>Get to know me!</p>
                 <Divider inverted={!props.isBgColorWhite} style={{padding: 0}} />
                 <p style={{textAlign: 'justify', fontSize: 'medium', color: props.textColor}}>
                     With nearly 5 years of professional experience, I have showcased my proficiency in strategizing and implementing User Interface (UI) Design and UX configurations across diverse industries,
