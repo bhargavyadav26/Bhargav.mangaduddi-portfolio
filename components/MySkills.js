@@ -93,7 +93,7 @@ export default function MySkills(props) {
                     </Grid.Column>
                     <Grid.Column verticalAlign='middle' textAlign='center'>
                     <div className='image-text'>
-                    <Image src="Docker.png"  />
+                    <Image src="docker.png"  />
                     <p  style={{color: props.textColor}}>Docker</p>
                     </div>
                 </Grid.Column>
