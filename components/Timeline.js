@@ -27,9 +27,9 @@ export default function Timeline(props) {
     >
       <h3 className="vertical-timeline-element-title">Ecommerce Developer Graduate Extern</h3>
       <h4 className="vertical-timeline-element-subtitle">Amtrak</h4>
-      {/* <p>
-        Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-      </p> */}
+      <p style={{margin: 0}}>
+        Washington, D.C.
+      </p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -42,7 +42,9 @@ export default function Timeline(props) {
     >
       <h3 className="vertical-timeline-element-title">Ecommerce Developer Intern</h3>
       <h4 className="vertical-timeline-element-subtitle">Amtrak</h4>
-      
+      <p style={{margin: 0}}>
+        Washington, D.C.
+      </p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
@@ -54,10 +56,10 @@ export default function Timeline(props) {
       icon={<Image src="school.png" style={{marginTop: '3px', marginLeft: '5px'}}/>}
     >
       <h3 className="vertical-timeline-element-title">Master's in Computer Science</h3>
-      <h4 className="vertical-timeline-element-subtitle">Wichita State University</h4>
-      {/* <p>
-        I completed master's with 3.81 GPA
-      </p> */}
+      <h4 className="vertical-timeline-element-subtitle">Wichita State University &#183; <span>GPA - 3.81</span></h4>
+      <p style={{margin: 0}}>
+        Wichita, Kansas
+      </p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -70,9 +72,9 @@ export default function Timeline(props) {
     >
       <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
       <h4 className="vertical-timeline-element-subtitle">WML IT Solutions</h4>
-      {/* <p>
-        Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-      </p> */}
+      <p style={{margin: 0}}>
+        Hyderabad, India
+      </p>
     </VerticalTimelineElement>
     
     <VerticalTimelineElement
@@ -86,7 +88,9 @@ export default function Timeline(props) {
     >
       <h3 className="vertical-timeline-element-title">Bachelor's in Electronics and Communications</h3>
       <h4 className="vertical-timeline-element-subtitle">Osmania University</h4>
-      
+      <p style={{margin: 0}}>
+        Hyderabad, India.
+      </p>
     </VerticalTimelineElement>
     
     
