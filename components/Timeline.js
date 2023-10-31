@@ -1,11 +1,17 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { Grid, Image, Menu, Icon, Label, Button } from 'semantic-ui-react';
+import { Grid, Image, Menu, Icon, Label, Button, Divider } from 'semantic-ui-react';
 
 import Link from 'next/link';
 
 export default function Timeline(props) {
  return (
      <Grid>
+      <Grid.Row>
+        <Grid.Column textAlign='center'>
+        <p style={{fontSize: "xx-large", fontWeight: 'bolder', fontFamily: 'cursive', color: props.textColor}}>My Timeline</p>
+        </Grid.Column>
+      </Grid.Row>
+      <Divider inverted={!props.isBgColorWhite} />
          <Grid.Row>
              <Grid.Column>
 

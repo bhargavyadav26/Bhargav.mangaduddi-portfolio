@@ -9,7 +9,7 @@ import ParticlesComp from '../components/Particles';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Timeline from '../components/Timeline';
-
+import AboutMe from '../components/AboutMe';
 
 export default function HomePage() {
   const [bgColor, setBgColor] = useState('#f9f9f9');
@@ -50,8 +50,8 @@ const changeBackgroundColor = (color) => {
           
           <Home isBgColorWhite={isBgColorWhite}/>
         </main>
-        
-        <Timeline isBgColorWhite={isBgColorWhite}/>
+        <AboutMe textColor={textColor} isBgColorWhite={isBgColorWhite} />
+        <Timeline textColor={textColor} isBgColorWhite={isBgColorWhite}/>
         &nbsp;
         <footer>
             <Footer isBgColorWhite={isBgColorWhite}  isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
