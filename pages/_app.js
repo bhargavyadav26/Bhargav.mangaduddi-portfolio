@@ -1,7 +1,6 @@
 import App from 'next/app'
 import '../styles/global.css';
 import 'semantic-ui-css/semantic.min.css'
-import { Analytics } from '@vercel/analytics/react';
 
 class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
@@ -12,7 +11,7 @@ class MyApp extends App {
       }
     render () {
         const { pageProps, Component } = this.props;
-        return <><Component {...pageProps} /><Analytics/></>
+        return <Component {...pageProps} />
     }
   }
   

@@ -12,6 +12,7 @@ import Timeline from '../components/Timeline';
 import AboutMe from '../components/AboutMe';
 import MySkills from '../components/MySkills';
 import { Divider } from 'semantic-ui-react';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function HomePage() {
   const [bgColor, setBgColor] = useState('#f9f9f9');
@@ -63,6 +64,7 @@ const changeBackgroundColor = (color) => {
         <footer>
             <Footer isBgColorWhite={isBgColorWhite}  isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
             </footer>
+            <Analytics />
       </div>
     </div>
     </>
