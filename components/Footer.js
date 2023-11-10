@@ -1,4 +1,4 @@
-import { Grid, Image } from "semantic-ui-react";
+import { Grid, Image, Divider } from "semantic-ui-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from "react";
 import ContactMe from "./contactForm";
@@ -19,14 +19,13 @@ export default function Footer(props) {
         <div style={{marginTop: '15px'}}>
             <Grid>
                 <Grid.Row columns={3} only="computer tablet">
+                    
                     <Grid.Column textAlign="center" verticalAlign="middle">
-                        <span style={{fontSize:"medium", fontWeight: "bold", color: textColor  }} aria-label="copyright bhargav mangaduddi">
-                        &copy; 2023 Bhargav Mangaduddi. All Rights Reserved.
-                        </span>
+                    {/* <ContactMe isModalOpen={props.isModalOpen} setIsModalOpen={props.setIsModalOpen} /> */}
+                    <span style={{fontSize:"medium", fontWeight: "bold", color: textColor  }}>+1 (201)-932-9317&nbsp;&nbsp;|&nbsp;&nbsp;bhargavyadav26@gmail.com</span>
                     </Grid.Column>
                     <Grid.Column textAlign="center" verticalAlign="middle">
                     <ContactMe isModalOpen={props.isModalOpen} setIsModalOpen={props.setIsModalOpen} />
-
                     </Grid.Column>
                     <Grid.Column>
                         <Grid  textAlign="center" verticalAlign="middle">
@@ -58,16 +57,11 @@ export default function Footer(props) {
                             </Grid>
                     </Grid.Column>
                 </Grid.Row>
-                <Grid.Row only="mobile" style={{padding: 0, margin: 0}}>
-                    <Grid.Column textAlign="center" verticalAlign="middle">
-                        <span style={{fontSize:"medium", fontWeight: "bold", color: textColor  }} aria-label="copyright bhargav mangaduddi">
-                        &copy; 2023 Bhargav Mangaduddi. All Rights Reserved.
-                        </span>
-                    </Grid.Column>
-                </Grid.Row>
                 <Grid.Row only="mobile">
                 <Grid.Column textAlign="center" verticalAlign="middle">
-                    <ContactMe isModalOpen={props.isModalOpen} setIsModalOpen={props.setIsModalOpen} />
+                    {/* <ContactMe isModalOpen={props.isModalOpen} setIsModalOpen={props.setIsModalOpen} /> */}
+                    <span style={{fontSize:"medium", fontWeight: "bold", color: textColor  }}>+1 (201)-932-9317&nbsp;&nbsp;|&nbsp;&nbsp;bhargavyadav26@gmail.com</span>
+                    <p><ContactMe isModalOpen={props.isModalOpen} setIsModalOpen={props.setIsModalOpen} /></p>
 
                     </Grid.Column>
                 </Grid.Row>
@@ -103,7 +97,23 @@ export default function Footer(props) {
                             </Grid>
                     </Grid.Column>
                 </Grid.Row>
+                
+                <Grid.Row only="mobile" style={{padding: 0, margin: 0}}>
+                    <Grid.Column textAlign="center" verticalAlign="middle">
+                        <span className={props.isBgColorWhite ?"text-animation-when-white" : "text-animation-when-black"} style={{fontSize:"medium", fontWeight: "bold", color: textColor  }} aria-label="copyright bhargav mangaduddi">
+                        &copy; 2023 Bhargav Mangaduddi. All Rights Reserved.
+                        </span>
+                    </Grid.Column>
+                </Grid.Row>
+            <Grid.Row only="computer tablet">
+                <Grid.Column textAlign="center">
+                        <span className={props.isBgColorWhite ?"text-animation-when-white" : "text-animation-when-black"} style={{fontSize:"medium", fontWeight: "bold", color: textColor  }} aria-label="copyright bhargav mangaduddi">
+                        &copy; 2023 Bhargav Mangaduddi. All Rights Reserved.
+                        </span>
+                    </Grid.Column>
+                </Grid.Row>
             </Grid>
+            
         </div>
     )
 }
