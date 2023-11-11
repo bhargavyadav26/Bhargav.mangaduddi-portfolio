@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 import Timeline from '../components/Timeline';
 import AboutMe from '../components/AboutMe';
 import MySkills from '../components/MySkills';
-import { Divider } from 'semantic-ui-react';
+import { Divider, Grid } from 'semantic-ui-react';
 import { Analytics } from '@vercel/analytics/react';
 
 export default function HomePage() {
@@ -61,9 +61,21 @@ const changeBackgroundColor = (color) => {
         &nbsp;
         <MySkills textColor={textColor} isBgColorWhite={isBgColorWhite}/>
         &nbsp;
+        <div>
         <footer>
             <Footer isBgColorWhite={isBgColorWhite}  isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+            <Grid>
+              
+            <Grid.Row only="computer tablet">
+                <Grid.Column textAlign="center">
+                        <span className={isBgColorWhite ?"text-animation-when-white" : "text-animation-when-black"} style={{fontSize:"medium", fontWeight: "bold", color: textColor  }} aria-label="copyright bhargav mangaduddi">
+                        &copy; 2023 Bhargav Mangaduddi. All Rights Reserved.
+                        </span>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
             </footer>
+            </div>
             <Analytics />
       </div>
     </div>

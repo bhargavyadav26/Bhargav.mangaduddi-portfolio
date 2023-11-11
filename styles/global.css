@@ -63,7 +63,7 @@ text-change {
 }
 
 .container {
-  min-height: 95vh !important;
+  min-height: 100vh !important;
   padding: 0.5em 1.5rem;
   /* min-width: 1450px; */
   position: relative;
