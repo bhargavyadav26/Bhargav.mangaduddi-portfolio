@@ -63,7 +63,7 @@ export default function Timeline(props) {
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      date="December 2017 - January 2022"
+      date="November 2020 - January 2022"
       dateClassName={props.isBgColorWhite ? 'verticalDateBlackColor' : 'verticalDateWhiteColor'}
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -71,6 +71,21 @@ export default function Timeline(props) {
       icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}}/>}
     >
       <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
+      <h4 className="vertical-timeline-element-subtitle">WML IT Solutions</h4>
+      <p style={{margin: 0}}>
+        Hyderabad, India
+      </p>
+    </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      date="December 2017 - October 2020"
+      dateClassName={props.isBgColorWhite ? 'verticalDateBlackColor' : 'verticalDateWhiteColor'}
+      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+      icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}}/>}
+    >
+      <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
       <h4 className="vertical-timeline-element-subtitle">WML IT Solutions</h4>
       <p style={{margin: 0}}>
         Hyderabad, India
