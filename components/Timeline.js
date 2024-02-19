@@ -91,6 +91,21 @@ export default function Timeline(props) {
         Hyderabad, India
       </p>
     </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      date="February 2015 - November 2017"
+      dateClassName={props.isBgColorWhite ? 'verticalDateBlackColor' : 'verticalDateWhiteColor'}
+      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+      icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}}/>}
+    >
+      <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+      <h4 className="vertical-timeline-element-subtitle">Webpatshala Solutions</h4>
+      <p style={{margin: 0}}>
+        Bangalore, India
+      </p>
+    </VerticalTimelineElement>
     
     <VerticalTimelineElement
       className="vertical-timeline-element--education"

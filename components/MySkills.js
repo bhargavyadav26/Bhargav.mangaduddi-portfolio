@@ -43,7 +43,7 @@ export default function MySkills(props) {
                     <Grid.Column verticalAlign='middle' textAlign='center'>
                     <div className='image-text'>
                     <Image src="node.png"  />
-                    <p  style={{color: props.textColor}}>NodeJS++</p>
+                    <p  style={{color: props.textColor}}>NodeJS</p>
                     </div>
                     </Grid.Column>
                     <Grid.Column verticalAlign='middle' textAlign='center'>
