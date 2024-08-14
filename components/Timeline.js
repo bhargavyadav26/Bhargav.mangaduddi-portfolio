@@ -25,12 +25,27 @@ export default function Timeline(props) {
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}} />}
     >
-      <h3 className="vertical-timeline-element-title">Ecommerce Developer Graduate Extern</h3>
-      <h4 className="vertical-timeline-element-subtitle">Amtrak</h4>
+      <h3 className="vertical-timeline-element-title">ECommerce Developer</h3>
+      <h4 className="vertical-timeline-element-subtitle">Client: Amtrak (Contract)</h4>
       <p style={{margin: 0}}>
         Washington, D.C.
       </p>
     </VerticalTimelineElement>
+             {/* <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      date="July 2023 - Jan 2024"
+      dateClassName={props.isBgColorWhite ? 'verticalDateBlackColor' : 'verticalDateWhiteColor'}
+      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+      icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}} />}
+    >
+      <h3 className="vertical-timeline-element-title">Ecommerce Developer</h3>
+      <h4 className="vertical-timeline-element-subtitle">Amtrak</h4>
+      <p style={{margin: 0}}>
+        Washington, D.C.
+      </p>
+    </VerticalTimelineElement> */}
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       date="March 2023 - May 2023"
@@ -40,8 +55,8 @@ export default function Timeline(props) {
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}}/>}
     >
-      <h3 className="vertical-timeline-element-title">Ecommerce Developer Intern</h3>
-      <h4 className="vertical-timeline-element-subtitle">Amtrak</h4>
+      <h3 className="vertical-timeline-element-title">Ecommerce Developer</h3>
+      <h4 className="vertical-timeline-element-subtitle">Client: Amtrak (Internship)</h4>
       <p style={{margin: 0}}>
         Washington, D.C.
       </p>

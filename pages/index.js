@@ -44,7 +44,11 @@ const changeBackgroundColor = (color) => {
     {/* <video src="bg_video.mp4" autoplay loop playsinline muted></video> */}
     <div >
       <div style={{backgroundColor: bgColor, transition: 'all 1s linear'}}>
-        
+      <Head>
+        <title>My Portfolio</title>
+        <meta name="description" content="My Portfolio" />
+        <link rel="icon" href="/man.png" />
+      </Head>
       <header>
         <Header changeBackgroundColor={changeBackgroundColor} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
         </header>
