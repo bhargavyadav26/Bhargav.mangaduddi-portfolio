@@ -25,7 +25,7 @@ export default function Timeline(props) {
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}} />}
     >
-      <h3 className="vertical-timeline-element-title">ECommerce Developer</h3>
+      <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
       <h4 className="vertical-timeline-element-subtitle">Client: Amtrak (Contract)</h4>
       <p style={{margin: 0}}>
         Washington, D.C.
