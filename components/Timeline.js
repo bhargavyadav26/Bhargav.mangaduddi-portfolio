@@ -18,15 +18,15 @@ export default function Timeline(props) {
              <VerticalTimeline>
              <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      date="July 2023 - Present"
+      date="July 2023 - January 2024"
       dateClassName={props.isBgColorWhite ? 'verticalDateBlackColor' : 'verticalDateWhiteColor'}
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}} />}
     >
-      <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
-      <h4 className="vertical-timeline-element-subtitle">Client: Amtrak (Contract)</h4>
+      <h3 className="vertical-timeline-element-title">E-Commerce Developer</h3>
+      <h4 className="vertical-timeline-element-subtitle">Client: Amtrak (Internship)</h4>
       <p style={{margin: 0}}>
         Washington, D.C.
       </p>
@@ -55,7 +55,7 @@ export default function Timeline(props) {
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       icon={<Image src="work.png" style={{marginTop: '4px', marginLeft: '6px'}}/>}
     >
-      <h3 className="vertical-timeline-element-title">Ecommerce Developer</h3>
+      <h3 className="vertical-timeline-element-title">E-Commerce Developer</h3>
       <h4 className="vertical-timeline-element-subtitle">Client: Amtrak (Internship)</h4>
       <p style={{margin: 0}}>
         Washington, D.C.
