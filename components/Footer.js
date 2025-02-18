@@ -35,12 +35,12 @@ export default function Footer(props) {
                             alt="twitter"
                             href='https://twitter.com/bhargav_yadav'
                             target='_blank' />
-                    <Image src='/linkedin.png'
+                    {/* <Image src='/linkedin.png'
                     as="a"
                     alt="linkedin"
                     href='https://www.linkedin.com/in/bhargavmangaduddi'
                     target='_blank'
-                     />
+                     /> */}
                          <Image src='/instagram.png'
                     as="a"
                     alt="instagram"
