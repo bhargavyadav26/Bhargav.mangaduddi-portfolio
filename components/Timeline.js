@@ -106,7 +106,7 @@ export default function Timeline(props) {
         Hyderabad, India
       </p>
     </VerticalTimelineElement>
-    <VerticalTimelineElement
+    {/* <VerticalTimelineElement
       className="vertical-timeline-element--work"
       date="February 2015 - November 2017"
       dateClassName={props.isBgColorWhite ? 'verticalDateBlackColor' : 'verticalDateWhiteColor'}
@@ -120,7 +120,7 @@ export default function Timeline(props) {
       <p style={{margin: 0}}>
         Bangalore, India
       </p>
-    </VerticalTimelineElement>
+    </VerticalTimelineElement> */}
     
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
